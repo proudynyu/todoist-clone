@@ -2,13 +2,20 @@ import React from 'react';
 import './global.css';
 import Navbar from './components/layout/Navbar';
 import Sidebar from './components/layout/Sidebar';
+import { Main, Container, Section } from './styles';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Navbar />
-      <Sidebar />
-    </div>
+      <Main>
+        <Container>
+          <Sidebar />
+          <Section>
+          </Section>
+        </Container>
+      </Main>
+    </>
   );
 }
 

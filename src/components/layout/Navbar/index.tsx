@@ -3,7 +3,7 @@ import {
     Header,
     Content,
     Nav,
-} from '../styles';
+} from './style';
 
 import { FaPizzaSlice } from 'react-icons/fa';
 import { AiOutlinePlus } from 'react-icons/ai';
