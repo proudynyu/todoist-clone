@@ -1,14 +1,21 @@
 import React from 'react';
 import { AiOutlineCalendar } from 'react-icons/ai';
 import { BsCalendar } from 'react-icons/bs'
-import { FiInbox, FiAlertTriangle, FiChevronDown, FiChevronRight, FiPlus } from 'react-icons/fi'
+import { 
+    FiInbox, 
+    FiAlertTriangle, 
+    FiChevronDown, 
+    FiChevronRight, 
+    FiPlus,
+    FiTrash2 } from 'react-icons/fi'
 import { 
     Container, 
     FixedList,
     UnorderedList,
     Button,
     SubButton,
-    ButtonContainer } from './styles';
+    ButtonContainer,
+    Projects } from './styles';
 
 export default function Sidebar() {
     return (
@@ -31,21 +38,50 @@ export default function Sidebar() {
                     Important
                 </FixedList>
             </UnorderedList>
-            <div className="projects">
-                <div className="btn-container">
-                    <Button>
-                        <span><FiChevronRight size={15}/></span>
-                        Projects
-                    </Button>
-                    <span><FiPlus size={15} /></span>
-                </div>
-                <ButtonContainer>
-                    <SubButton>Work</SubButton>
-                    <SubButton>Home</SubButton>
-                    <SubButton>Vacation</SubButton>
-                    <SubButton>Teste</SubButton>
-                </ButtonContainer>
-            </div>
+
+            <Projects>
+                <Button>
+                    <span>
+                        <FiChevronRight size={15}/>
+                    </span>
+                    <p>Projects</p>
+                    <span className="plus-symbol">
+                        <FiTrash2 size={15} color="#000" />
+                    </span>
+                    <span className="plus-symbol">
+                        <FiPlus size={15} color="#d92b00" />
+                    </span>
+                </Button>
+            </Projects>
+            <Projects>
+                <Button>
+                    <span>
+                        <FiChevronRight size={15}/>
+                    </span>
+                    <p>Labels</p>
+                    <span className="plus-symbol">
+                        <FiTrash2 size={15} color="#000" />
+                    </span>
+                    <span className="plus-symbol">
+                        <FiPlus size={15} color="#d92b00" />
+                    </span>
+                </Button>
+            </Projects>
+            <Projects>
+                <Button>
+                    <span>
+                        <FiChevronRight size={15}/>
+                    </span>
+                    <p>Filter</p>
+                    <span className="plus-symbol">
+                        <FiTrash2 size={15} color="#000" />
+                    </span>
+                    <span className="plus-symbol">
+                        <FiPlus size={15} color="#d92b00" />
+                    </span>
+                </Button>
+            </Projects>
+
         </Container>
     )
 }

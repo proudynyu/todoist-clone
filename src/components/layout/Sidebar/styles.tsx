@@ -37,7 +37,55 @@ export const FixedList = styled.li`
     }
 `;
 
-export const Button = styled.button``;
+export const Projects = styled.div`
+    display: flex;
+    margin-top: 10px;
+    padding-left: 15px;
+`;
+
+export const Button = styled.button`
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 28px;
+    align-items: center;
+    background-color: #ededed;
+    border: none;
+    border-bottom: 1px solid #0000000a;
+    cursor: pointer;
+    transition: 200ms;
+
+    &:hover {
+        background-color: #f7f7f7;
+    }
+
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 0.3;
+
+        &.plus-symbol {
+            border: none;
+            height: 28px;
+            width: 20px;
+            flex: 0.2;
+            cursor: pointer;
+            transition: 200ms;
+            z-index: 3;
+        };
+
+        &.plus-symbol:hover {
+            background-color: #00000015;
+        }
+    };
+
+    p {
+        flex: 2;
+        text-align: left;
+        font-weight: bold;
+    }
+`;
 
 export const ButtonContainer = styled.div`
     display: flex;

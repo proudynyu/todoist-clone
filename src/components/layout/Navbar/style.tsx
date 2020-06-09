@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 export const Header = styled.header`
-    height: 6vh;
+    height: 5vh;
     width: 100%;
-    background-color: #de1a00;
+    background-color: #ff3333;
     color: white;
 `;
 
 export const Content = styled.div`
-    width: 60%;
+    width: 80%;
     height: 100%;
     margin: 0 auto;
     display: flex;
